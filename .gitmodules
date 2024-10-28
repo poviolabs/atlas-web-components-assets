@@ -1,0 +1,3 @@
+[submodule "nextjs-template"]
+	path = nextjs-template
+	url = git@github.com:poviolabs/nextjs-template.git
