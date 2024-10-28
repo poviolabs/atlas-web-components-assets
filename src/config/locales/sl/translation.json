@@ -1,0 +1,228 @@
+{
+  "appName": "FlowrSpot",
+  "appDescription": "Odkrijte rože v vaši bližini",
+  "shared": {
+    "languages": {
+      "slovenian": "Slovenščina",
+      "english": "Angleščina"
+    },
+    "loadingState": {
+      "text": "Nalaganje..."
+    },
+    "errorState": {
+      "retryBtn": "Poskusite znova"
+    },
+    "notFound": {
+      "head": {
+        "title": "Stran ni najdena",
+        "description": "Stran, ki jo iščete, ne obstaja."
+      },
+      "heading": "Stran ni najdena",
+      "subheading": "Stran, ki jo iščete, ne obstaja.",
+      "homeBtn": "Pojdi domov"
+    },
+    "errorFallback": {
+      "heading": "Nekaj je šlo narobe",
+      "subheading": "Napaka: {{error}}",
+      "retryBtn": "Poskusi ponovno"
+    },
+    "sharedErrors": {
+      "dataValidation": "Pri preverjanju podatkov je prišlo do napake",
+      "internalError": "Prišlo je do notranje napake. ",
+      "networkError": "Prišlo je do napake v omrežju. ",
+      "canceledError": "Zahteva je bila preklicana.",
+      "unknownError": "Prišlo je do neznane napake. "
+    },
+    "theme": {
+      "toggle": "Preklopi temo"
+    },
+    "pagination": {
+      "loadMore": "Naloži več"
+    }
+  },
+  "ui": {
+    "dropdown": {
+      "closeAlt": "Zaprite meni",
+      "selectAll": "Izberi vse",
+      "clearSelection": "jasno",
+      "allOption": "Vse"
+    },
+    "datePicker": {
+      "today": "Danes",
+      "clear": "jasno",
+      "save": "Shrani"
+    },
+    "modal": {
+      "closeBtn": "Zapri"
+    }
+  },
+  "home": {
+    "hero": {
+      "heading": "Odkrijte rože v vaši bližini",
+      "subheading_one": "Raziščite med več kot <0>{{count}}</0> rožo",
+      "subheading_two": "Raziščite med več kot <0>{{count}}</0> rožama",
+      "subheading_few": "Raziščite med več kot <0>{{count}}</0> rožami",
+      "subheading_other": "Raziščite med več kot <0>{{count}}</0> rožami"
+    }
+  },
+  "auth": {
+    "shared": {
+      "email": {
+        "label": "Email naslov",
+        "invalid": "Vnesite veljaven elektronski naslov",
+        "required": "E-poštni naslov je obvezen"
+      },
+      "password": {
+        "label": "Geslo",
+        "weak": "Geslo je prešibko",
+        "required": "zahtevano je geslo"
+      },
+      "socials": {
+        "google": "Nadaljujte z Googlom",
+        "facebook": "Nadaljujte s Facebookom",
+        "amazon": "Nadaljujte z Amazonom",
+        "apple": "Nadaljujte z Appleom"
+      }
+    },
+    "register": {
+      "head": {
+        "title": "Registrirajte se",
+        "description": "Ustvari nov račun"
+      },
+      "title": "Ustvari račun",
+      "firstName": {
+        "label": "Ime",
+        "required": "Ime je obvezno"
+      },
+      "fullName": {
+        "label": "Polno ime",
+        "required": "Potrebno je polno ime"
+      },
+      "lastName": {
+        "label": "Priimek",
+        "required": "Priimek je obvezen"
+      },
+      "dateOfBirth": {
+        "label": "Datum rojstva",
+        "required": "Datum rojstva je obvezen",
+        "tooOld": "Datum rojstva ne more biti tako star",
+        "inFuture": "Datum rojstva ne more biti v prihodnosti"
+      },
+      "emailExists": "Email že obstaja",
+      "submitBtn": "Ustvari račun",
+      "successToast": "Uspešno ste ustvarili račun!"
+    },
+    "login": {
+      "head": {
+        "title": "Vpiši se",
+        "description": "Prijavite se v svoj račun"
+      },
+      "title": "Dobrodošel nazaj",
+      "submitBtn": "Vpiši se",
+      "invalidCredentials": "Neveljaven e-poštni naslov/geslo",
+      "confirmAccount": "Kliknite tukaj, da potrdite svoj račun",
+      "notConfirmed": "Vaš račun ni potrjen",
+      "successToast": "Uspešno ste se prijavili!"
+    },
+    "forgotPassword": {
+      "head": {
+        "title": "Ste pozabili geslo",
+        "description": "Ste pozabili geslo?"
+      },
+      "link": "Ste pozabili geslo?",
+      "invalidCode": "Neveljavna koda za preverjanje",
+      "title": "Ste pozabili geslo?",
+      "description": "Vnesite svoj e-poštni naslov in poslali vam bomo kodo za ponastavitev gesla.",
+      "successToast": "Poslali smo vam kodo za ponastavitev gesla.",
+      "submitBtn": "Pošlji kodo"
+    },
+    "resetPassword": {
+      "head": {
+        "title": "Ponastavitev gesla",
+        "description": "Ponastavi geslo"
+      },
+      "title": "Ponastavi geslo",
+      "description": "Vnesite kodo, ki ste jo prejeli v e-poštnem sporočilu, in novo geslo, da ponastavite geslo.",
+      "noEmailLink": "Nisem prejel e-pošte",
+      "code": {
+        "label": "Koda",
+        "invalid": "Neveljavna koda za preverjanje. ",
+        "sixCharacters": "Koda mora biti dolga 6 znakov",
+        "required": "Koda je obvezna"
+      },
+      "newPassword": {
+        "label": "novo geslo"
+      },
+      "submitBtn": "Ponastavitev gesla",
+      "successToast": "Uspešno ste ponastavili geslo!"
+    },
+    "confirm": {
+      "head": {
+        "title": "Potrdite račun",
+        "description": "Potrdite svoj račun"
+      },
+      "title": "Poslali smo vam kodo. ",
+      "success": "Vaš račun je preverjen. ",
+      "resend": {
+        "btn": "Ponovno pošlji kodo",
+        "success": "Poslali smo vam kodo.",
+        "error": "Napaka pri ponovnem pošiljanju kode, poskusite znova."
+      },
+      "code": {
+        "label": "Koda",
+        "required": "Koda je obvezna"
+      },
+      "submitBtn": "Potrdi"
+    }
+  },
+  "navbar": {
+    "links": {
+      "flowers": "Rože",
+      "favorites": "Priljubljene",
+      "fileUpload": "Nalaganje datoteke"
+    },
+    "auth": {
+      "login": "Vpiši se",
+      "register": "Nov račun"
+    },
+    "languageSwitcher": {
+      "open": "Odpri preklopnik jezikov",
+      "title": "Spremeni jezik",
+      "label": "Izberite jezik"
+    }
+  },
+  "profile": {
+    "head": {
+      "title": "Profil",
+      "description": "Tvoj profil"
+    },
+    "fullName": "Polno ime",
+    "logoutBtn": "Odjava",
+    "showProfilePictureBtn": "Prikaži sliko profila",
+    "sightings_one": "{{count}} opazovanje",
+    "sightings_two": "{{count}} opazovanja",
+    "sightings_few": "{{count}} opazovanja",
+    "sightings_other": "{{count}} opazovanj"
+  },
+  "flower": {
+    "sightings_one": "{{count}} opazovanje",
+    "sightings_two": "{{count}} opazovanja",
+    "sightings_few": "{{count}} opazovanja",
+    "sightings_other": "{{count}} opazovanj"
+  },
+  "fileUpload": {
+    "head": {
+      "title": "Nalaganje datoteke",
+      "description": "Naložite datoteko"
+    },
+    "heading": "Predstavitev nalaganja datotek",
+    "label": "Izberite svojo datoteko",
+    "uploadBtn": "Naložite svojo datoteko",
+    "cancelBtn": "Prekliči nalaganje",
+    "progress": "Nalaganje v teku {{progress}}%",
+    "error": "Napaka pri nalaganju: {{error}}",
+    "success": "Nalaganje uspešno!",
+    "viewFile": "Oglejte si datoteko",
+    "debugStateHeading": "[Odpravljanje napak] Stanje programa za nalaganje"
+  }
+}

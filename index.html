@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+    <link rel="stylesheet" href="atlas.css" />
+  </head>
+  <body>
+    <!-- <div id="root"></div> -->
+    <!-- buttons -->
+    <atlas-button variant="primary">Button</atlas-button>
+    <atlas-icon-button icon="ShareIcon" variant="primary"></atlas-icon-button>
+    <atlas-inline-icon-button
+      icon="ShareIcon"
+      variant="primary"
+    ></atlas-inline-icon-button>
+    <atlas-pill-button
+      icon="ShareIcon"
+      variant="primary"
+      dismissable="true"
+      is-disabled="false"
+      >Pill button</atlas-pill-button
+    >
+    <atlas-text-button icon="ShareIcon" variant="primary"
+      >Text button</atlas-text-button
+    >
+    <atlas-toggle-button size="small">toggle button</atlas-toggle-button>
+
+    <!-- inputs -->
+    <atlas-checkbox
+      name="checkbox-name"
+      label="Checkbox"
+      default-selected="true"
+      >This is a default selected checkbox</atlas-checkbox
+    >
+    <atlas-datepicker label="Datepicker label"></atlas-datepicker>
+    <atlas-dropdown
+      label="Dropdown label"
+      selection-mode="single"
+      selected-item-ids="[]"
+      items='[{ "id": "welcome", "label": "Welcome" },{ "id": "hi", "label": "Hi" }]'
+    ></atlas-dropdown>
+    <atlas-radio-group
+      name="radio-name"
+      label="Radio"
+      options='[{ "value": "1", "label": "Radio 1" }, { "value": "2", "label": "Radio 2" }]'
+    ></atlas-radio-group>
+    <atlas-slider
+      label="Slider input"
+      min-value="1"
+      max-value="100"
+      unit="cm"
+    ></atlas-slider>
+    <atlas-text-input
+      name="username"
+      icon="ShareIcon"
+      icon-alt-text="wow!"
+      on-icon-click="onIconClick"
+      on-change="onUsernameChange"
+    ></atlas-text-input>
+    <atlas-toggle default-selected="true"> Toogle mee </atlas-toggle>
+
+    <atlas-button icon="ShareIcon" variant="secondary" on-press="onPress"
+      >Open Modal</atlas-button
+    >
+    <atlas-modal id="modal" is-open="false" on-close="onClose">
+      <div class="my-form">
+        <p>test</p>
+        <atlas-textinput
+          name="username"
+          icon="ShareIcon"
+          icon-alt-text="wow!"
+          on-icon-click="onIconClick"
+          on-change="onUsernameChange"
+        ></atlas-textinput>
+      </div>
+    </atlas-modal>
+    <atlas-drawer id="drawer" is-open="false" on-open-change="onOpenChange">
+      <atlas-button slot="trigger" variant="primary" on-press="onDrawerToggle"
+        >Open Drawer</atlas-button
+      >
+      <div slot="children" class="my-drawer">
+        <atlas-button slot="trigger" variant="primary" on-press="onDrawerToggle"
+          >Close Drawer</atlas-button
+        >
+        <p>inside drawer</p>
+      </div>
+    </atlas-drawer>
+
+    <!-- text -->
+    <atlas-typography size="body-1">Lorem ipsum...</atlas-typography>
+    <atlas-link href="https://google.com" target="_blank"
+      >Google something</atlas-link
+    >
+
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      function onUsernameChange(e) {
+        console.log('username', e.target.value);
+      }
+      function onIconClick(e) {
+        console.log('icon clicked', e);
+      }
+      function onOpenChange(e) {
+        console.log('drawer - onOpenChange', e);
+      }
+      function onDrawerToggle(e) {
+        document.querySelector('#drawer').isOpen =
+          !document.querySelector('#drawer').isOpen;
+      }
+      function onPress(e) {
+        document.querySelector('#modal').isOpen = true;
+      }
+      function onClose(e) {
+        document.querySelector('#modal').isOpen = false;
+      }
+    </script>
+  </body>
+</html>
